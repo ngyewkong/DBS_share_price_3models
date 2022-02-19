@@ -7,11 +7,13 @@
     <title>Prediction</title>
     <style>
         body {
+            display: flex;
+            flex-direction: column;
             background-color: #19282F;
             color: white;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             text-align: center;
-
+            height: 100%;
         }
 
         h1 {
@@ -36,10 +38,25 @@
             cursor: pointer;
         }
 
+        .content {
+            flex: 1 0 auto;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            align-content: center;
+            text-align: center;
+            background-color: #4d5558;
+        }
+        
+
 
     </style>
 </head>
 <body>
+    <div class="content">
     <h1><img src="https://fintechlab.nus.edu.sg/wp-content/uploads/2020/09/dbs-bank-logo.png"> Predict DBS Share Price</h1>
     <br>
     <br>
@@ -58,5 +75,16 @@
     <p>
         {{result3}}
     </p>
+    </div>
 </body>
+
+
+<footer>
+    <div class="copyright">
+        ©2022 NBS FlexiMasters in Business & Financial Analytics
+    </div>
+    <div class="mod">
+        CET023 AI and Analytics in Finance, Credit and Related Risks
+    </div>
+</footer>
 </html>
